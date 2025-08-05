@@ -56,7 +56,7 @@
              spec:
                containers:
                - name: leader
-                 image: us.icr.io/sn-labs-rianelias24/guestbook:v1
+                 image: k8s.gcr.io/redis:e2e  # or just image: redis
                  resources:
                    requests:
                      cpu: 100m
@@ -110,7 +110,7 @@
              spec:
                containers:
                - name: follower
-                 image: us.icr.io/sn-labs-rianelias24/guestbook:v1
+                 image: gcr.io/google_samples/gb-redisslave:v1
                  resources:
                    requests:
                      cpu: 100m
